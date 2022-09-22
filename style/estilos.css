@@ -1,0 +1,455 @@
+/* mobile first y media query*/
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap');
+
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    body{
+        background-color:rgb(7,55,235);
+        background: linear-gradient(297deg, rgba(7,55,235,1) 18%, rgba(227,209,209,1) 49%, rgba(241, 1, 17, 0.81) 88%);
+        font-family: 'Anek Telugu', sans-serif;
+    }
+        
+    
+    
+    header{
+        width: 100%;
+        height: auto;
+        background: rgb(226,24,65);
+        background: linear-gradient(297deg, rgba(226,24,65,1) 10%, rgba(228,214,214,1) 49%, rgba(29,58,217,1) 91%);
+        padding: 10px;
+        margin-top: 0;
+        display: grid;
+        grid-template-areas:
+        "logos"
+        "nav";
+
+    }
+    
+    .encabezado{
+        font-size: 25px;
+        margin: 0%;
+    
+    }
+    nav{
+        margin: 0%;
+        grid-area: nav;
+    }
+    .logosEncabezados{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: logos;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    
+    
+    a{
+        color: white;
+        font-size: 17px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .logo{
+        border: none;
+        width: 60px;
+        height: 60px;
+        margin: 0%;
+    }
+    main{
+        width: 100%;
+    }
+    img{
+        width: 290px;
+        height: 250px;
+    }
+    
+    .tituloInicio{
+        border: 4px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        grid-area: tituloInicio;
+        
+    }
+    .parrafoUno{
+        font-size: small;
+        font-weight: 500;
+        padding: 10px;
+        border: 2px solid white;
+        text-align: center;
+        margin: 1em 2em 1em 2em;
+        grid-area: parrafoUno;
+    }
+    .imgInicio{
+        border: 2px solid white;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    .img-1{
+        grid-area: img1;
+    }
+    .img-2{
+        grid-area: img2;
+    }
+
+    .contenedorInicio{
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+        "tituloInicio"
+        "parrafoUno"
+        "img1"
+        "img2";
+        gap: 1em;
+    }
+    
+    .piePag{
+        grid-area: pieTitulo;
+    }
+    .piePag h4{
+        margin: 0%;
+        font-size: 1rem;
+    }
+
+    .piePagina{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: pieLogos;
+    
+    }
+    
+    .piePagina img{
+        width: 48px;
+        height: 48px;
+        border: 2px solid white;
+        margin: 5px;
+    
+    }
+    footer{
+        background: rgb(226,24,65);
+        background: linear-gradient(297deg, rgba(226,24,65,1) 10%, rgba(228,214,214,1) 49%, rgba(29,58,217,1) 91%);
+        padding: 20px;
+        margin-bottom: 0;
+        display: grid;
+        grid-template-areas:
+        "pieTitulo"
+        "pieLogos";
+        justify-content: center;
+        justify-items: center;
+        
+    }
+    
+    /* Hasta aca son estilos de mobile first de index(inicio) y estilos de header y footer de todos los html*/
+    
+    /* Aca empieza estilos para segundo html Biografia mobile first*/
+    
+    .tituloBio{
+        border: 4px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        grid-area: tituloBio;
+    }
+    .parrafoBio{
+        font-size: small;
+        font-weight: 500;
+        padding: 10px;
+        border: 2px solid white;
+        text-align: center;
+        margin: 1em 2em 1em 2em;
+        grid-area: parrafoBio;
+    }
+    .img-a{
+        grid-area: imga;
+    }
+    .img-b{
+        grid-area: imgb;
+    }
+    .img-c{
+        grid-area: imgc;
+    }
+
+    .contenedorBio{
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+        "tituloBio"
+        "parrafoBio"
+        "imga"
+        "imgb"
+        "imgc";
+        gap: 1em;
+    }
+
+    /* Aca empieza estilos para el tercer html Carrera mobile first*/
+
+    .card{
+        background: rgb(33,110,230);
+        background: linear-gradient(95deg, rgba(33,110,230,1) 20%, rgba(180,13,58,1) 76%);
+        border: 2px solid white;
+        padding: 3px;
+        border-radius: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carreraImg img{
+        width: 290px;
+        height: 200px;
+        border: 2px solid crimson;
+        border-radius: 10px;
+    }
+    .estadisticas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .estadisticas h2, h3{
+        color: white;
+    }
+    .tituloCarrera{
+        border: 4px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    .tituloCarrera{
+        grid-area: titCar;
+    }
+    .car1{
+        grid-area: car1;
+    }
+    .car2{
+        grid-area: car2;
+    }
+    .car3{
+        grid-area: car3;
+    }
+    .car4{
+        grid-area: car4;
+    }
+    .car5{
+        grid-area: car5;
+    }
+    .car6{
+        grid-area: car6;
+    }
+    .car7{
+        grid-area: car7;
+    }
+    .contenedorCarrera{
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titCar"
+        "car1"
+        "car2"
+        "car3"
+        "car4"
+        "car5"
+        "car6"
+        "car7";
+        row-gap: 15px;
+        margin-bottom: 1em;
+
+    }
+    
+    /* Aca empieza estilos para cuarto html Titulos mobile first*/
+    
+    .titulosLista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .parrafoTitulos{
+        font-size: 18px;
+        border: 2px solid white;
+        color: white;
+        margin: 5px 3px 5px 3px;
+        text-align: center; 
+    }
+    
+    .tituloTitulos{
+        grid-area: tituloGen;
+    }
+    .titulos1{
+        grid-area: sub1;
+    }
+    .lista1{
+        grid-area: lista1;
+    }
+    .titulos2{
+        grid-area: sub2;
+    }
+    .lista2{
+        grid-area: lista2;
+    }
+    .contenedorTitulos{
+        width: 100%;
+        height: auto;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "tituloGen"
+        "sub1"
+        "lista1"
+        "sub2"
+        "lista2";
+
+    }
+    
+    
+    
+
+    
+    
+/* Este media solo cambio un fondo para marcarlo, pero me centre en trabajar mobile first y escritorio*/    
+
+@media(min-width: 576px) {
+
+.contenedorInicio{
+    background-color: aqua;
+}   
+.contenedorBio{
+    background-color: aqua;
+} 
+}
+
+/* Este media esta con estilos para escritorio, header y footer para los 5 html y los 3 primeros en su totalidad (index, bio y carrera)*/    
+
+
+@media(min-width: 992px) {
+
+header{
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+    "logos nav";
+    align-items: center;
+    }
+.logosEncabezados{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    justify-content: space-evenly;
+
+}
+.encabezado{
+    font-size: 2.5rem;
+
+}
+
+a{
+    font-size: 1.5rem;
+}
+
+.contenedorInicio{
+    background-color:rgb(7,55,235);
+    background: linear-gradient(297deg, rgba(7,55,235,1) 18%, rgba(227,209,209,1) 49%, rgba(241, 1, 17, 0.81) 88%);
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+    "tituloInicio tituloInicio"
+    "parrafoUno parrafoUno"
+    "img1 img2";
+}    
+
+img{
+    width: 450px;
+    height: 350px;
+}
+.parrafoUno{
+    font-size: x-large;
+}
+
+footer{
+    margin-bottom: 0;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+    "pieTitulo pieLogos";
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+.piePagina{
+    display: flex;
+    flex-direction: row;
+}
+.piePag h4{
+    font-size: 1.5em;
+}
+.img-a img{
+    width: 800px;
+    height: 600px;
+}
+.contenedorBio{
+    background-color:rgb(7,55,235);
+    background: linear-gradient(297deg, rgba(7,55,235,1) 18%, rgba(227,209,209,1) 49%, rgba(241, 1, 17, 0.81) 88%);
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas:
+    "tituloBio tituloBio"
+    "parrafoBio parrafoBio"
+    "imga imga"
+    "imgb imgc";
+}
+.parrafoBio{
+    font-size: x-large;
+}
+
+.card{
+    width: 420px;
+    padding: 15px;
+}
+.contenedorCarrera{
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "titCar titCar"
+    "car1 car2"
+    "car3 car4" 
+    "car5 car6"
+    "car7 car7";
+
+}
+
+}
