@@ -1,0 +1,20 @@
+header{
+    @media(min-width: 768px){
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas:
+        "logos nav";
+        align-items: center;
+    }
+}
+
+footer{
+    @media(min-width: 768px){
+        margin-bottom: 0;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas:
+        "pieTitulo pieLogos";
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+

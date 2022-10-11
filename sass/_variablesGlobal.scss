@@ -1,0 +1,9 @@
+$blanco: white;
+$total: 100%;
+
+
+@mixin size ($width,$height) {
+    width: $width;
+    height: $height;
+}
+

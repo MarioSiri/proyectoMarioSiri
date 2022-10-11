@@ -1,0 +1,36 @@
+footer{
+    background: rgb(226,24,65);
+    background: linear-gradient(297deg, rgba(226,24,65,1) 10%, rgba(228,214,214,1) 49%, rgba(29,58,217,1) 91%);
+    padding: 20px;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-areas:
+    "pieTitulo"
+    "pieLogos";
+    justify-content: center;
+    justify-items: center;
+    .piePag{
+        grid-area: pieTitulo;
+        h4{
+            margin: 0%;
+            font-size: 1rem;
+            @media(min-width: 768px){
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .piePagina{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: pieLogos;
+        img{
+            width: 48px;
+            height: 48px;
+            border: 2px solid white;
+            margin: 5px;    
+        }
+    }
+}

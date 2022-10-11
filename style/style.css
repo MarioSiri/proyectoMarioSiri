@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(7, 55, 235);
+  background: linear-gradient(297deg, rgb(7, 55, 235) 18%, rgb(227, 209, 209) 49%, rgba(241, 1, 17, 0.81) 88%);
+  font-family: "Anek Telugu", sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+img {
+  width: 290px;
+  height: 200px;
+  border: 2px solid white;
+  margin-bottom: 1em;
+}
+
+.carreraImg img {
+  width: 290px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background: rgb(226, 24, 65);
+  background: linear-gradient(297deg, rgb(226, 24, 65) 10%, rgb(228, 214, 214) 49%, rgb(29, 58, 217) 91%);
+  padding: 10px;
+  margin-top: 0;
+  display: grid;
+  grid-template-areas: "logos" "nav";
+  row-gap: 0.5em;
+}
+header .logosEncabezados {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-area: logos;
+}
+header .logosEncabezados .encabezado {
+  font-size: 28px;
+  margin: 0%;
+}
+header .logosEncabezados .logo {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 0%;
+}
+header nav {
+  margin: 0%;
+  grid-area: nav;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+}
+header nav ul li {
+  text-decoration: none;
+  font-size: 17px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer {
+  background: rgb(226, 24, 65);
+  background: linear-gradient(297deg, rgb(226, 24, 65) 10%, rgb(228, 214, 214) 49%, rgb(29, 58, 217) 91%);
+  padding: 20px;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-areas: "pieTitulo" "pieLogos";
+  justify-content: center;
+  justify-items: center;
+}
+footer .piePag {
+  grid-area: pieTitulo;
+}
+footer .piePag h4 {
+  margin: 0%;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  footer .piePag h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+footer .piePagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: pieLogos;
+}
+footer .piePagina img {
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  margin: 5px;
+}
+
+.contenedorInicio {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "tituloInicio" "parrafoUno" "img1" "img2";
+  gap: 1em;
+}
+.contenedorInicio .tituloInicio {
+  border: 4px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  grid-area: tituloInicio;
+}
+.contenedorInicio .parrafoUno {
+  font-size: small;
+  font-weight: 500;
+  padding: 10px;
+  border: 2px solid white;
+  text-align: center;
+  margin: 1em 2em 1em 2em;
+  grid-area: parrafoUno;
+}
+@media (min-width: 576px) {
+  .contenedorInicio .parrafoUno {
+    font-size: medium;
+  }
+}
+@media (min-width: 768px) {
+  .contenedorInicio .parrafoUno {
+    font-size: large;
+    font-weight: bold;
+  }
+}
+@media (min-width: 992px) {
+  .contenedorInicio .parrafoUno {
+    font-size: x-large;
+    font-weight: bold;
+  }
+}
+.contenedorInicio .imgInicio {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+.contenedorInicio .imgInicio .img-1 {
+  grid-area: img1;
+}
+.contenedorInicio .imgInicio .img-2 {
+  grid-area: img2;
+}
+
+.contenedorBio {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-areas: "tituloBio" "parrafoBio" "imga" "imgb" "imgc";
+  gap: 1em;
+}
+.contenedorBio .tituloBio {
+  border: 4px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  grid-area: tituloBio;
+}
+.contenedorBio .parrafoBio {
+  font-size: small;
+  font-weight: 500;
+  padding: 10px;
+  border: 2px solid white;
+  text-align: center;
+  margin: 1em 2em 1em 2em;
+  grid-area: parrafoBio;
+}
+@media (min-width: 576px) {
+  .contenedorBio .parrafoBio {
+    font-size: medium;
+  }
+}
+@media (min-width: 768px) {
+  .contenedorBio .parrafoBio {
+    font-size: large;
+    font-weight: bold;
+  }
+}
+@media (min-width: 992px) {
+  .contenedorBio .parrafoBio {
+    font-size: x-large;
+    font-weight: bold;
+  }
+}
+.contenedorBio .img-a {
+  grid-area: imga;
+}
+.contenedorBio .img-b {
+  grid-area: imgb;
+}
+.contenedorBio .img-c {
+  grid-area: imgc;
+}
+
+.contenedorCarrera {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "titCar" "car1" "car2" "car3" "car4" "car5" "car6" "car7";
+  row-gap: 15px;
+  margin-bottom: 1em;
+}
+.contenedorCarrera .tituloCarrera {
+  border: 4px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  grid-area: titCar;
+}
+.contenedorCarrera .card {
+  background: rgb(33, 110, 230);
+  background: linear-gradient(95deg, rgb(33, 110, 230) 20%, rgb(180, 13, 58) 76%);
+  border: 2px solid white;
+  padding: 3px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .contenedorCarrera .card {
+    width: 420px;
+    padding: 15px;
+  }
+}
+.contenedorCarrera .card .estadisticas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorCarrera .card .estadisticas h2 {
+  color: white;
+}
+.contenedorCarrera .card .estadisticas h3 {
+  color: white;
+}
+.contenedorCarrera .car1 {
+  grid-area: car1;
+}
+.contenedorCarrera .car2 {
+  grid-area: car2;
+}
+.contenedorCarrera .car3 {
+  grid-area: car3;
+}
+.contenedorCarrera .car4 {
+  grid-area: car4;
+}
+.contenedorCarrera .car5 {
+  grid-area: car5;
+}
+.contenedorCarrera .car6 {
+  grid-area: car6;
+}
+.contenedorCarrera .car7 {
+  grid-area: car7;
+}
+
+.contenedorTitulos {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "tituloGen" "sub1" "lista1" "sub2" "lista2";
+}
+.contenedorTitulos .tituloTitulos {
+  border: 4px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  grid-area: tituloGen;
+}
+.contenedorTitulos .titulosLista {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+.contenedorTitulos .titulosLista li {
+  text-decoration: none;
+}
+.contenedorTitulos .titulosLista li .parrafoTitulos {
+  font-size: 18px;
+  border: 2px solid white;
+  color: white;
+  margin: 5px 3px 5px 3px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .contenedorTitulos .titulosLista li .parrafoTitulos {
+    font-size: medium;
+  }
+}
+@media (min-width: 768px) {
+  .contenedorTitulos .titulosLista li .parrafoTitulos {
+    font-size: x-large;
+  }
+}
+.contenedorTitulos .titulos1 {
+  grid-area: sub1;
+}
+.contenedorTitulos .lista1 {
+  grid-area: lista1;
+}
+.contenedorTitulos .titulos2 {
+  grid-area: sub2;
+}
+.contenedorTitulos .lista2 {
+  grid-area: lista2;
+}
+
+.contenedorSeleccion {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "titSeleccion" "parrafoSel" "galeria";
+  row-gap: 15px;
+  margin-bottom: 1em;
+}
+.contenedorSeleccion .tituloSeleccion {
+  border: 4px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  grid-area: titSeleccion;
+}
+.contenedorSeleccion .parrafoSeleccion {
+  font-size: small;
+  font-weight: 500;
+  padding: 10px;
+  border: 2px solid white;
+  text-align: center;
+  margin: 1em 2em 1em 2em;
+  grid-area: parrafoSel;
+}
+@media (min-width: 576px) {
+  .contenedorSeleccion .parrafoSeleccion {
+    font-size: medium;
+  }
+}
+@media (min-width: 768px) {
+  .contenedorSeleccion .parrafoSeleccion {
+    font-size: large;
+    font-weight: bold;
+  }
+}
+@media (min-width: 992px) {
+  .contenedorSeleccion .parrafoSeleccion {
+    font-size: x-large;
+    font-weight: bold;
+  }
+}
+
+.gridImg {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6";
+  grid-area: galeria;
+}
+.gridImg .imgSeleccion {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+.gridImg .item1 {
+  grid-area: foto1;
+}
+.gridImg .item2 {
+  grid-area: foto2;
+}
+.gridImg .item3 {
+  grid-area: foto3;
+}
+.gridImg .item4 {
+  grid-area: foto4;
+}
+.gridImg .item5 {
+  grid-area: foto5;
+}
+.gridImg .item6 {
+  grid-area: foto6;
+}
+
+@media (min-width: 768px) {
+  header {
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: "logos nav";
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin-bottom: 0;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: "pieTitulo pieLogos";
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .logosEncabezados {
+    justify-content: space-evenly;
+  }
+  nav ul {
+    justify-content: space-evenly;
+  }
+  a {
+    font-size: 22px;
+  }
+  img {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .encabezado {
+    font-size: 2.5rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+  .contenedorInicio {
+    background-color: rgb(7, 55, 235);
+    background: linear-gradient(297deg, rgb(7, 55, 235) 18%, rgb(227, 209, 209) 49%, rgba(241, 1, 17, 0.81) 88%);
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: "tituloInicio tituloInicio" "parrafoUno parrafoUno" "img1 img2";
+  }
+  .contenedorBio {
+    background-color: rgb(7, 55, 235);
+    background: linear-gradient(297deg, rgb(7, 55, 235) 18%, rgb(227, 209, 209) 49%, rgba(241, 1, 17, 0.81) 88%);
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: "tituloBio tituloBio" "parrafoBio parrafoBio" "imga imga" "imgb imgc";
+  }
+  .img-a img {
+    width: 600px;
+    height: 450px;
+  }
+  .contenedorCarrera {
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "titCar titCar" "car1 car2" "car3 car4" "car5 car6" "car7 car7";
+  }
+  .gridImg {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
+  }
+  .piePagina {
+    display: flex;
+    flex-direction: row;
+  }
+  .piePag h4 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .encabezado {
+    font-size: 2.5rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+  img {
+    width: 450px;
+    height: 350px;
+  }
+  .img-a img {
+    width: 800px;
+    height: 600px;
+  }
+}/*# sourceMappingURL=style.css.map */

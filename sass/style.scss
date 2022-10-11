@@ -1,0 +1,111 @@
+@import "variablesGlobal";
+@import "fuentes";
+@import "generales";
+@import "nav";
+@import "pie";
+@import "inicio";
+@import "bio";
+@import "carrera";
+@import "titulos";
+@import "seleccion";
+@import "media";
+
+@media(min-width: 576px) {
+    
+    .logosEncabezados{
+        justify-content: space-evenly;
+    }
+    nav ul{
+        justify-content: space-evenly;
+    }
+    a{
+        font-size: 22px;
+    }
+    
+    img {
+        @include size (350px,300px);
+    }
+
+}
+
+@media(min-width: 768px) {
+    .encabezado{
+        font-size: 2.5rem;
+    }
+    
+    a{
+        font-size: 1.5rem;
+    }
+
+    .contenedorInicio{
+        background-color:rgb(7,55,235);
+        background: linear-gradient(297deg, rgba(7,55,235,1) 18%, rgba(227,209,209,1) 49%, rgba(241, 1, 17, 0.81) 88%);
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas:
+        "tituloInicio tituloInicio"
+        "parrafoUno parrafoUno"
+        "img1 img2";
+    }
+
+    .contenedorBio{
+        background-color:rgb(7,55,235);
+        background: linear-gradient(297deg, rgba(7,55,235,1) 18%, rgba(227,209,209,1) 49%, rgba(241, 1, 17, 0.81) 88%);
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas:
+        "tituloBio tituloBio"
+        "parrafoBio parrafoBio"
+        "imga imga"
+        "imgb imgc";
+    }
+    .img-a img{
+        @include size (600px,450px);
+    }
+
+    .contenedorCarrera{
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "titCar titCar"
+        "car1 car2"
+        "car3 car4" 
+        "car5 car6"
+        "car7 car7";
+    }
+    .gridImg{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "foto1 foto2"
+        "foto3 foto4"
+        "foto5 foto6";
+    }
+
+    .piePagina{
+        display: flex;
+        flex-direction: row;
+    }
+    .piePag h4{
+        font-size: 30px;
+    }
+
+}
+
+@media(min-width: 992px) {
+
+.encabezado{
+    font-size: 2.5rem;
+
+}
+
+a{
+    font-size: 1.5rem;
+}
+
+img{
+    @include size (450px,350px);
+}
+
+.img-a img{
+    @include size (800px,600px);
+}
+
+}

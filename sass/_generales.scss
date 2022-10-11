@@ -1,0 +1,24 @@
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(7,55,235);
+    background: linear-gradient(297deg, rgba(7,55,235,1) 18%, rgba(227,209,209,1) 49%, rgba(241, 1, 17, 0.81) 88%);
+    font-family: 'Anek Telugu', sans-serif;
+}
+main{
+    width: $total;
+}
+
+img{
+    @include size (290px,200px);
+    border: 2px solid white;
+    margin-bottom: 1em;
+}
+.carreraImg img{
+    @include size (290px,200px);
+    border: 2px solid $blanco;
+    border-radius: 10px;
+
+}
