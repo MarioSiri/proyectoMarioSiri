@@ -1,6 +1,6 @@
 footer{
-    background: rgb(226,24,65);
-    background: linear-gradient(297deg, rgba(226,24,65,1) 10%, rgba(228,214,214,1) 49%, rgba(29,58,217,1) 91%);
+    background: rgb(142,36,44);
+    background: linear-gradient(0deg, #2d8fa2 0%, rgb(46, 66, 184) 100%);
     padding: 20px;
     margin-bottom: 0;
     display: grid;
@@ -9,6 +9,7 @@ footer{
     "pieLogos";
     justify-content: center;
     justify-items: center;
+    border-top: 2px solid white;
     .piePag{
         grid-area: pieTitulo;
         h4{

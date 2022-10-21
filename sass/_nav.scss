@@ -1,54 +1,20 @@
 header{
     width: 100%;
     height: auto;
-    background: rgb(226,24,65);
-    background: linear-gradient(297deg, rgba(226,24,65,1) 10%, rgba(228,214,214,1) 49%, rgba(29,58,217,1) 91%);
+    background: rgb(142,36,44);
+    background: linear-gradient(0deg, #2d8fa2 0%, rgb(46, 66, 184) 100%);
     padding: 10px;
+    border-bottom: 2px solid white;
     margin-top: 0;
-    display: grid;
-    grid-template-areas:
-    "logos"
-    "nav";
-    row-gap: 0.5em;
-    .logosEncabezados{
-        width: 100%;
+    .contenedorLogos{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        grid-area: logos;
-        .encabezado{
-            font-size: 28px;
-            margin: 0%;
-        }
-        .logo{
-            border: none;
-            @include size (60px,60px);
-            margin: 0%;
-        }
-        
-    }
-    nav{
-        margin: 0%;
-        grid-area: nav;
-        ul{
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 0%;
-            padding: 0%;
-            li{
-                text-decoration: none;
-                font-size: 17px;
-                a{
-                    color: white;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                }
-            }
+        width: 50%;
+        .logoLs {
+            margin-bottom: 0;
+            border: 0;
         }
     }
-
 }
