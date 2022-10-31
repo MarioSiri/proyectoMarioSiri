@@ -21,7 +21,7 @@
         grid-area: bannerCar;
     }
     .card{
-        background-color: #5686ff;
+        background-color: #3662d1;
         border: 2px solid white;
         padding: 3px;
         border-radius: 10px;
@@ -29,9 +29,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        box-shadow: 4px 6px 9px white;
         @media(min-width: 992px){
-            width: 420px;
-            padding: 15px;
+            width: 440px;
+            padding: 10px;
         }
         .estadisticas{
             display: flex;

@@ -1,7 +1,7 @@
 footer{
     background: rgb(142,36,44);
     background: linear-gradient(0deg, #2d8fa2 0%, rgb(46, 66, 184) 100%);
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 0;
     display: grid;
     grid-template-areas:
@@ -12,12 +12,14 @@ footer{
     border-top: 2px solid white;
     .piePag{
         grid-area: pieTitulo;
-        h4{
+        .pieTitulo{
+            color: white;
             margin: 0%;
             font-size: 1rem;
+            font-weight: bold;
             @media(min-width: 768px){
                 font-size: 1.5rem;
-                font-weight: bold;
+                
             }
         }
     }
@@ -30,7 +32,7 @@ footer{
         img{
             width: 48px;
             height: 48px;
-            border: 2px solid white;
+            border: 1px solid white;
             margin: 5px;    
         }
     }

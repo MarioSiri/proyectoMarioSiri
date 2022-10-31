@@ -15,11 +15,12 @@
         
         grid-area: bannerSeleccion;    
     }
-    .parrafoSeleccion{
+    p{
         font-size: small;
         font-weight: 500;
+        color: $parrafo;
         padding: 10px;
-        border: 2px solid white;
+        border-bottom: 2px solid rgb(50, 126, 233);
         text-align: center;
         margin: 1em 2em 1em 2em;
         grid-area: parrafoSel;

@@ -3,20 +3,48 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(166, 214, 248);
+    background-color: rgb(119, 178, 221);
     font-family: 'Anek Telugu', sans-serif;
 }
 
 main{
     width: $total;
 }
+img{
+    @include size (290px,200px);
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    box-shadow: 4px 6px 9px white;
+    @media(min-width: 576px){
+        @include size (420px,300px);
+    }
+    @media(min-width: 768px){
+        @include size (330px,230px);
+    }
+    @media(min-width: 992px){
+        @include size (420px,300px);
+    }
+}
+.img-a img{
+    @media(min-width: 768px){
+    @include size (600px,450px);
+    }   
+    @media(min-width: 992px){
+        @include size (700px,550px);
+    }
+}
+
 
 
 .carreraImg img{
     @include size (290px,200px);
     border: 2px solid $blanco;
     border-radius: 10px;
-
+    box-shadow: none;
+    @media(min-width: 992px){
+        @include size (320px,225px);
+    }
 }
 
 .banner{
@@ -26,6 +54,9 @@ main{
     padding: 0;
     @media(min-width: 768px){
         height: 350px;
+    }
+    @media(min-width: 992px){
+        height: 400px;
     }
     h1{
         font-family: 'Anton', sans-serif;
@@ -44,10 +75,12 @@ main{
         }
     }
     img{
-        width: 100%;
-        height: 100%;
+        width: $total;
+        height: $total;
         border: 0;
+        border-radius: 0%;
         opacity: 0.5;
+        box-shadow: none;
     }
 
 }

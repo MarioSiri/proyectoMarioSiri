@@ -5,7 +5,8 @@
     justify-items: center;
     grid-template-areas:
     "bannerInicio"
-    "parrafoUno"
+    "parrafoInicial"
+    "parrafoInicio"
     "img1"
     "img2";
     gap: 1em;
@@ -14,14 +15,14 @@
         grid-area: bannerInicio;
         
     }
-    .parrafoUno{
+    p{
+        color: $parrafo;
         font-size: small;
         font-weight: 500;
         padding: 10px;
-        border: 2px solid white;
+        border-bottom: 2px solid $blanco;
         text-align: center;
         margin: 1em 2em 1em 2em;
-        grid-area: parrafoUno;
         @media(min-width: 576px){
             font-size: medium;;
             
@@ -35,15 +36,18 @@
             font-weight: bold;
         }
     }
-    .imgInicio{
-        margin-bottom: 1em;
-        display: flex;
-        justify-content: center;
-        .img-1{
-            grid-area: img1;
-        }
-        .img-2{
-            grid-area: img2;
-        }
+    .parrafoInicial{
+        grid-area: parrafoInicial;
     }
+    .parrafoInicio{
+        grid-area: parrafoInicio;
+    }
+    
+    .img-1{
+        grid-area: img1;
+    }
+    .img-2{
+        grid-area: img2;
+    }
+    
 }

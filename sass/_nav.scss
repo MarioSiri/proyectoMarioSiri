@@ -13,8 +13,30 @@ header{
         align-items: center;
         width: 50%;
         .logoLs {
+            @include size(60px,53px);
             margin-bottom: 0;
             border: 0;
+            box-shadow: none;
         }
+    }
+}
+
+
+.navbar-nav{
+    align-items: center;
+    .nav-item{
+        .nav-link.active{
+            color: white;
+            font-size: 1rem;
+            @media(min-width: 768px){
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+.navbar-light{
+    .navbar-toggler{
+        color: white;
+        border-color: white;
     }
 }

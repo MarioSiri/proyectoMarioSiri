@@ -11,24 +11,14 @@
 @import "media";
 
 
-
-@media(min-width: 576px) {
-    
-    a{
-        font-size: 22px;
-    }
-    
-
-
-}
-
 @media(min-width: 768px) {
 
     .contenedorInicio{
         grid-template-columns: 1fr, 1fr;
         grid-template-areas:
         "bannerInicio bannerInicio"
-        "parrafoUno parrafoUno"
+        "parrafoInicial parrafoInicial"
+        "parrafoInicio parrafoInicio"
         "img1 img2";
     }
 
@@ -36,13 +26,13 @@
         grid-template-columns: 1fr, 1fr;
         grid-template-areas:
         "bannerBio bannerBio"
-        "parrafoBio parrafoBio"
+        "parrafoUno parrafoUno"
         "imga imga"
+        "parrafoDos parrafoDos"
+        "parrafoTres parrafoTres"
         "imgb imgc";
     }
-    .img-a img{
-        @include size (600px,450px);
-    }
+    
 
     .contenedorCarrera{
         justify-content: space-between;
@@ -61,29 +51,7 @@
         "foto3 foto4"
         "foto5 foto6";
     }
-
-    .piePagina{
-        display: flex;
-        flex-direction: row;
-    }
-    .piePag h4{
-        font-size: 30px;
-    }
+    
 
 }
 
-@media(min-width: 992px) {
-
-
-
-a{
-    font-size: 1.5rem;
-}
-
-
-
-.img-a img{
-    @include size (700px,550px);
-}
-
-}

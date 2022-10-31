@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: rgb(166, 214, 248);
+  background-color: rgb(119, 178, 221);
   font-family: "Anek Telugu", sans-serif;
 }
 
@@ -15,11 +15,58 @@ main {
   width: 100%;
 }
 
+img {
+  width: 290px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  box-shadow: 4px 6px 9px white;
+}
+@media (min-width: 576px) {
+  img {
+    width: 420px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  img {
+    width: 330px;
+    height: 230px;
+  }
+}
+@media (min-width: 992px) {
+  img {
+    width: 420px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-a img {
+    width: 600px;
+    height: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .img-a img {
+    width: 700px;
+    height: 550px;
+  }
+}
+
 .carreraImg img {
   width: 290px;
   height: 200px;
   border: 2px solid white;
   border-radius: 10px;
+  box-shadow: none;
+}
+@media (min-width: 992px) {
+  .carreraImg img {
+    width: 320px;
+    height: 225px;
+  }
 }
 
 .banner {
@@ -31,6 +78,11 @@ main {
 @media (min-width: 768px) {
   .banner {
     height: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .banner {
+    height: 400px;
   }
 }
 .banner h1 {
@@ -55,7 +107,9 @@ main {
   width: 100%;
   height: 100%;
   border: 0;
+  border-radius: 0%;
   opacity: 0.5;
+  box-shadow: none;
 }
 
 header {
@@ -75,14 +129,35 @@ header .contenedorLogos {
   width: 50%;
 }
 header .contenedorLogos .logoLs {
+  width: 60px;
+  height: 53px;
   margin-bottom: 0;
   border: 0;
+  box-shadow: none;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: white;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .navbar-nav .nav-item .nav-link.active {
+    font-size: 1.5rem;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
 }
 
 footer {
   background: rgb(142, 36, 44);
   background: linear-gradient(0deg, #2d8fa2 0%, rgb(46, 66, 184) 100%);
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 0;
   display: grid;
   grid-template-areas: "pieTitulo" "pieLogos";
@@ -93,14 +168,15 @@ footer {
 footer .piePag {
   grid-area: pieTitulo;
 }
-footer .piePag h4 {
+footer .piePag .pieTitulo {
+  color: white;
   margin: 0%;
   font-size: 1rem;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
-  footer .piePag h4 {
+  footer .piePag .pieTitulo {
     font-size: 1.5rem;
-    font-weight: bold;
   }
 }
 footer .piePagina {
@@ -113,7 +189,7 @@ footer .piePagina {
 footer .piePagina img {
   width: 48px;
   height: 48px;
-  border: 2px solid white;
+  border: 1px solid white;
   margin: 5px;
 }
 
@@ -122,47 +198,48 @@ footer .piePagina img {
   height: auto;
   display: grid;
   justify-items: center;
-  grid-template-areas: "bannerInicio" "parrafoUno" "img1" "img2";
+  grid-template-areas: "bannerInicio" "parrafoInicial" "parrafoInicio" "img1" "img2";
   gap: 1em;
 }
 .contenedorInicio .banner {
   grid-area: bannerInicio;
 }
-.contenedorInicio .parrafoUno {
+.contenedorInicio p {
+  color: rgb(15, 15, 154);
   font-size: small;
   font-weight: 500;
   padding: 10px;
-  border: 2px solid white;
+  border-bottom: 2px solid white;
   text-align: center;
   margin: 1em 2em 1em 2em;
-  grid-area: parrafoUno;
 }
 @media (min-width: 576px) {
-  .contenedorInicio .parrafoUno {
+  .contenedorInicio p {
     font-size: medium;
   }
 }
 @media (min-width: 768px) {
-  .contenedorInicio .parrafoUno {
+  .contenedorInicio p {
     font-size: large;
     font-weight: bold;
   }
 }
 @media (min-width: 992px) {
-  .contenedorInicio .parrafoUno {
+  .contenedorInicio p {
     font-size: x-large;
     font-weight: bold;
   }
 }
-.contenedorInicio .imgInicio {
-  margin-bottom: 1em;
-  display: flex;
-  justify-content: center;
+.contenedorInicio .parrafoInicial {
+  grid-area: parrafoInicial;
 }
-.contenedorInicio .imgInicio .img-1 {
+.contenedorInicio .parrafoInicio {
+  grid-area: parrafoInicio;
+}
+.contenedorInicio .img-1 {
   grid-area: img1;
 }
-.contenedorInicio .imgInicio .img-2 {
+.contenedorInicio .img-2 {
   grid-area: img2;
 }
 
@@ -171,37 +248,46 @@ footer .piePagina img {
   height: auto;
   display: grid;
   justify-items: center;
-  grid-template-areas: "bannerBio" "parrafoBio" "imga" "imgb" "imgc";
+  grid-template-areas: "bannerBio" "parrafoUno" "imga" "parrafoDos" "parrafoTres" "imgb" "imgc";
   gap: 1em;
 }
 .contenedorBio .banner {
   grid-area: bannerBio;
 }
-.contenedorBio .parrafoBio {
+.contenedorBio p {
+  color: rgb(15, 15, 154);
   font-size: small;
   font-weight: 500;
   padding: 10px;
-  border: 2px solid white;
+  border-bottom: 2px solid white;
   text-align: center;
   margin: 1em 2em 1em 2em;
-  grid-area: parrafoBio;
 }
 @media (min-width: 576px) {
-  .contenedorBio .parrafoBio {
+  .contenedorBio p {
     font-size: medium;
   }
 }
 @media (min-width: 768px) {
-  .contenedorBio .parrafoBio {
+  .contenedorBio p {
     font-size: large;
     font-weight: bold;
   }
 }
 @media (min-width: 992px) {
-  .contenedorBio .parrafoBio {
+  .contenedorBio p {
     font-size: x-large;
     font-weight: bold;
   }
+}
+.contenedorBio .parrafoUno {
+  grid-area: parrafoUno;
+}
+.contenedorBio .parrafoDos {
+  grid-area: parrafoDos;
+}
+.contenedorBio .parrafoTres {
+  grid-area: parrafoTres;
 }
 .contenedorBio .img-a {
   grid-area: imga;
@@ -228,7 +314,7 @@ footer .piePagina img {
   grid-area: bannerCar;
 }
 .contenedorCarrera .card {
-  background-color: #5686ff;
+  background-color: #3662d1;
   border: 2px solid white;
   padding: 3px;
   border-radius: 10px;
@@ -236,11 +322,13 @@ footer .piePagina img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  box-shadow: 4px 6px 9px white;
 }
 @media (min-width: 992px) {
   .contenedorCarrera .card {
-    width: 420px;
-    padding: 15px;
+    width: 440px;
+    padding: 10px;
   }
 }
 .contenedorCarrera .card .estadisticas {
@@ -288,30 +376,44 @@ footer .piePagina img {
 .contenedorTitulos .banner {
   grid-area: bannerTit;
 }
-.contenedorTitulos .titulosLista {
+.contenedorTitulos h2 {
+  margin-top: 15px;
+  border-bottom: 2px solid white;
+  color: rgb(15, 15, 154);
+  font-size: x-large;
+}
+@media (min-width: 768px) {
+  .contenedorTitulos h2 {
+    font-size: xx-large;
+  }
+}
+.contenedorTitulos ul {
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style: none;
 }
-.contenedorTitulos .titulosLista li {
+.contenedorTitulos ul li {
   text-decoration: none;
 }
-.contenedorTitulos .titulosLista li .parrafoTitulos {
-  font-size: 18px;
+.contenedorTitulos ul li p {
+  font-size: medium;
   border: 2px solid white;
-  color: white;
+  color: rgb(15, 15, 154);
   margin: 5px 3px 5px 3px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: center;
+  text-shadow: 4px 6px 9px white;
 }
 @media (min-width: 576px) {
-  .contenedorTitulos .titulosLista li .parrafoTitulos {
-    font-size: medium;
+  .contenedorTitulos ul li p {
+    font-size: large;
   }
 }
 @media (min-width: 768px) {
-  .contenedorTitulos .titulosLista li .parrafoTitulos {
+  .contenedorTitulos ul li p {
     font-size: x-large;
   }
 }
@@ -342,28 +444,29 @@ footer .piePagina img {
 .contenedorSeleccion .banner {
   grid-area: bannerSeleccion;
 }
-.contenedorSeleccion .parrafoSeleccion {
+.contenedorSeleccion p {
   font-size: small;
   font-weight: 500;
+  color: rgb(15, 15, 154);
   padding: 10px;
-  border: 2px solid white;
+  border-bottom: 2px solid rgb(50, 126, 233);
   text-align: center;
   margin: 1em 2em 1em 2em;
   grid-area: parrafoSel;
 }
 @media (min-width: 576px) {
-  .contenedorSeleccion .parrafoSeleccion {
+  .contenedorSeleccion p {
     font-size: medium;
   }
 }
 @media (min-width: 768px) {
-  .contenedorSeleccion .parrafoSeleccion {
+  .contenedorSeleccion p {
     font-size: large;
     font-weight: bold;
   }
 }
 @media (min-width: 992px) {
-  .contenedorSeleccion .parrafoSeleccion {
+  .contenedorSeleccion p {
     font-size: x-large;
     font-weight: bold;
   }
@@ -406,30 +509,21 @@ footer .piePagina img {
 @media (min-width: 768px) {
   footer {
     margin-bottom: 0;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "pieTitulo pieLogos";
     justify-content: space-evenly;
     align-items: center;
   }
 }
 
-@media (min-width: 576px) {
-  a {
-    font-size: 22px;
-  }
-}
 @media (min-width: 768px) {
   .contenedorInicio {
     grid-template-columns: 1fr, 1fr;
-    grid-template-areas: "bannerInicio bannerInicio" "parrafoUno parrafoUno" "img1 img2";
+    grid-template-areas: "bannerInicio bannerInicio" "parrafoInicial parrafoInicial" "parrafoInicio parrafoInicio" "img1 img2";
   }
   .contenedorBio {
     grid-template-columns: 1fr, 1fr;
-    grid-template-areas: "bannerBio bannerBio" "parrafoBio parrafoBio" "imga imga" "imgb imgc";
-  }
-  .img-a img {
-    width: 600px;
-    height: 450px;
+    grid-template-areas: "bannerBio bannerBio" "parrafoUno parrafoUno" "imga imga" "parrafoDos parrafoDos" "parrafoTres parrafoTres" "imgb imgc";
   }
   .contenedorCarrera {
     justify-content: space-between;
@@ -439,21 +533,5 @@ footer .piePagina img {
   .gridImg {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
-  }
-  .piePagina {
-    display: flex;
-    flex-direction: row;
-  }
-  .piePag h4 {
-    font-size: 30px;
-  }
-}
-@media (min-width: 992px) {
-  a {
-    font-size: 1.5rem;
-  }
-  .img-a img {
-    width: 700px;
-    height: 550px;
   }
 }/*# sourceMappingURL=style.css.map */

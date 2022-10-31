@@ -5,8 +5,10 @@
     justify-items: center;
     grid-template-areas:
     "bannerBio"
-    "parrafoBio"
+    "parrafoUno"
     "imga"
+    "parrafoDos"
+    "parrafoTres"
     "imgb"
     "imgc";
     gap: 1em;
@@ -14,14 +16,14 @@
         
         grid-area: bannerBio;
     }
-    .parrafoBio{
+    p{
+        color: $parrafo;
         font-size: small;
         font-weight: 500;
         padding: 10px;
-        border: 2px solid white;
+        border-bottom: 2px solid $blanco;
         text-align: center;
         margin: 1em 2em 1em 2em;
-        grid-area: parrafoBio;
         @media(min-width: 576px){
             font-size: medium;;
             
@@ -34,6 +36,15 @@
             font-size: x-large;
             font-weight: bold;
         }
+    }
+    .parrafoUno{
+        grid-area: parrafoUno;
+    }
+    .parrafoDos{
+        grid-area: parrafoDos;
+    }
+    .parrafoTres{
+        grid-area: parrafoTres;
     }
     .img-a{
         grid-area: imga;
